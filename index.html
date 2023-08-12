@@ -1,220 +1,330 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Gate Tangchartsiri</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="images/logo3.png">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="logo">
-			<img src="images/nameLogo.png" alt="" style="width: 20%;" onclick="location.href = 'index.html'">
-		</div>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .resume {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .experience {
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  .experience:hover {
+    background-color: rgb(238, 238, 238);
+  }
+  .experience:last-child {
+    border: none;
+  }
+  .experience h2 {
+    margin: 0;
+    font-size: 120%; /* Larger font size for job titles */
+  }
+  .contact {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .contact h2 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .contact p {
+    margin: 5px 0;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+  .popup-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  .img-no-save {
+    pointer-events: none;
+  }
+</style>
+<link rel="icon" type="image/png" href="images/favicon/gt_favicon.png">
+<title>Gate Tangchartsiri - Online Resume</title>
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<div class="resume">
+  <div class="contact">
+    <h2>Gate Tangchartsiri</h2>
+    <p>+1 (803) 524-0819 | <a href="mailto:gate.tang@gmail.com">gate.tang@gmail.com</a> | <a href="https://www.linkedin.com/in/gate-tangchartsiri/">LinkedIn </a> | <a href="https://github.com/gateTang">GitHub</a> | Atlanta, Georgia</p>
+  </div>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo2.png" alt="" /></span>
-						<h1>Gate Tangchartsiri</h1>
-						<p>Internet of Things/Data Engineer
-							| Quantitative Analyst</p>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/gate-tangchartsiri/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/gateTang" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="mailto:gate.tang@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-							<br><br>
-							<li><a href="#about" class="icon solid fa-angle-down"><span class="label">About</span></a></li>
-						</ul>
-					</header>
+  <h2>Education</h2>
+  <div class="experience">
+    <h2>Georgia Institute of Technology</h2>
+    <p>Bachelor of Science in Computer Engineering, GPA: 3.80/4.00</p>
+    <p>Concentrations: Distributed Systems & Information Internetwork</p>
+    <p>August 2022 – May 2026</p>
+  </div>
+  
+  <h2>Work Experience</h2>
+  <div class="experience" onclick="openPopup('experience1-popup')">
+    <h2>Carrier Corporation</h2>
+    <p><b>Digital Product Management Intern, </b>Atlanta, Georgia</p>
+    <p>May 2023 – August 2023</p>
+    <ul><li>Managed user acceptance testing, product gap analysis and teardown to assess product functionality and identify critical issues</li></ul>
+    <ul><li>Implemented Brick Schema ontology and VBA script to streamline and standardize the naming of over 600 data points for seamless HVAC chiller to data analytics integration.</li></ul>
+    <ul><li>Innovated and validated parameters with cross functional engineering teams for creation of automated reports on HVAC performance.</li></ul>
+  </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#about" class="active">About</a></li>
-							<li><a href="#work">Work</a></li>
-							<li><a href="#second">Projects</a></li>
-							<li><a href="#contact_me">Contact Me</a></li>
-							<li><a href="https://drive.google.com/file/d/1wIbV7jd4EUvmDL1N57r1fWplze89gAl9/view?usp=sharing" style="background-color: #b9e7fc;">Resume</a></li>
-						</ul>
-					</nav>
+  <!-- Add a new job title block under Work Experiences -->
+  <div class="experience" onclick="openPopup('experience2-popup')">
+    <h2>Flowers Invention Studio/Smart3 Makerspaces</h2>
+    <p><b>Research Project Lead, </b>Atlanta, Georgia</p>
+    <p>January 2023 – Present</p>
+    <ul><li>Led research project focused on developing digital architecture system through AWS and Beagle Bone Black/Teensy to automate and collect safety-related data from the Flowers Invention Studio/Makerspace cold cut saw machine.</li></ul>
+    <ul><li>Managed predictive maintenance initiative to utilize collected data to provide actional insights towards Makerspace machinery.</li></ul>
+    <ul><li>Spearheaded programming of Teensy to AWS IoT Core to automate and collect energy-related data from the Flowers Invention Studio/Makerspace.</li></ul>
+    <p><b>Research Student Assistant, </b>Atlanta, Georgia</p>
+    <p>October 2022 – January 2023</p>
+    <ul><li>Integrated AWS IoT Core and the MQTT protocol to improve machine to machine data communication.</li></ul>
+    <ul><li>Implemented data analysis tools in simple moving averages for denoising sensor data to be used for research and improvement of Invention Studio.</li></ul>
+    <ul><li>Optimized and improved existing Prototyping Instructor (PI) card check-in system at Georgia Tech Invention Studio.</li></ul>
+  </div>
 
-				<!-- Main -->
-					<div id="main">
+  <h2>Project Experiences</h2>
 
-						<!-- Introduction -->
-							<section id="about" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Gate Tangchartsiri</h2>
-										</header>
-										<p>Passionate computer engineer with a strong understanding in software and hardware integration.
-											Created an Internet of Things module using Python, ES8266, and HTML. Strong passion for investing and data analytics;
-											built minimum-variance frontier and time-series momentum-based investing algorithms.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-								<h4 style="text-align: center;"><b>Education</b></h4>
-								<table>
-									<td style="width: 30%;">
-										<h6 style="text-align: right;"><b>School:</b></h6>
-										<h6 style="text-align: right;"><b>Concentration: </b></h6>
-										<h6 style="text-align: right;"><b>Length: </b></h6>
-										<h6 style="text-align: right;"><b>GPA: </b></h6>
-									</td>
-									<td>
-										<h6 style="text-align: left;">Georgia Institute of Technology</h6>
-										<h6 style="text-align: left;">Distributed Systems & Software Design, Information Internetwork </h6>
-										<h6 style="text-align: left;">2022 - 2026</h6>
-										<h6 style="text-align: left;">TBA</h6>
-									</td>
-								</table>
-								<table>
-									<td style="width: 30%;">
-										<h6 style="text-align: right;"><b>School:</b></h6>
-										<h6 style="text-align: right;"><b>Concentration: </b></h6>
-										<h6 style="text-align: right;"><b>Length: </b></h6>
-										<h6 style="text-align: right;"><b>GPA: </b></h6>
-									</td>
-									<td>
-										<h6 style="text-align: left;">Saint Andrews International School</h6>
-										<h6 style="text-align: left;">International Baccalaureate</h6>
-										<h6 style="text-align: left;">2008-2022</h6>
-										<h6 style="text-align: left;">3.88</h6>
-									</td>
-								</table>
-								<!--
-										<h5 style="text-align: center;">I am a Computer Engineering Major at the <u>Georiga Institute of Technology</u>. I am planning to concentrate in <b>Distributed Systems
-											& Software Design</b> and the <b>Information Internetwork</b> Thread.
-										</u></h5>
-								-->
-								<h4 style="text-align: center;"><b>Skills</b></h4>
-								<table>
-									<td>
-										<h6 style="text-align: right;"><b>Programming: </b></h6>
-										<h6 style="text-align: right;"><b>Hardware: </b></h6>
-										<h6 style="text-align: right;"><b>Software/Tools: </b></h6>
-										<h6 style="text-align: right;"><b>Languages: </b></h6>
-									</td>
-									<td>
-										<h6 style="text-align: left;">Python, C, C++, HTML, CSS, Java, JavaScript</h6>
-										<h6 style="text-align: left;">Arduino, ESP32, ESP8266, Raspberry Pi</h6>
-										<h6 style="text-align: left;">Amazon Web Service (AWS), Arduino IDE, Heroku, Firebase, Linux, Pandas, NumPy, CAD, Microsoft Office, Excel</h6>
-										<h6 style="text-align: left;">Thai (Native), English (Fluent), Chinese (Intermediate)</h6>
-									</td>
-									
-								</table>
-								
-							</section>
+  <div class="experience" onclick="openPopup('experience3-popup')">
+    <h2>Marine Robotics Club – RoboBoat</h2>
+    <p><b>Software Team Member, </b>Atlanta, Georgia</p>
+    <p>October 2022 – January 2023</p>
+    <ul><li>Utilized Ubuntu 20.04-powered Virtual Machine to operate VRX software to test robot software and design.</li></ul>
+    <ul><li>Designed CAD models for buoy obstacles used in VRX software.</li></ul>
+    <ul><li>Aided in construction of computer vision software for buoy and target detection in RoboBoat competition. </li></ul>
+  </div>
 
-						<!-- First Section -->
-							<section id="work" class="main special">
-								<h4><b>Work Experience</b></h4>
-								<ul class="features">
-									<table style="table-layout: fixed ; width: 100%;">
-										<td id="workE" onclick="location.href = 'vip.html'">
-											<h5 style="text-align: center;"><b>Smart<sup>3</sup> Makerspaces Vertically Integrated Project (VIP) - Makerspace IoT</b></h5>
-											<h6 style="text-align: center;">Student Research Assistant</h6>
-											<img src="images/invention_studio.png" style="width: 30%;">
-										</td>
-										<td id="workE" onclick="location.href = 'fintech.html'">
-											<h5 style="text-align: center;"><b>Fintech & Investment Strategies Internship</b></h5>
-											<h6 style="text-align: center;">Quantitative Analyst</h6>
-											<img src="images/fintech.webp" style="width: 45%;">
-										</td>
-									</table>
-								</ul>
-							</section>
+  <div class="experience" onclick="openPopup('experience4-popup')">
+    <h2>Private Financial Technology Marketplace and Investment Strategy Startup</h2>
+    <p><b>Quantitative Analyst, </b>Bangkok, Thailand</p>
+    <p>May 2022 – December 2022</p>
+    <ul><li>Programmed cross-sectional momentum-based investment algorithms through pandas-based minimum variance frontier optimization.</li></ul>
+    <ul><li>Developed market signal indicators through rolling means, and maximum drawdown charts to improve portfolio backtesting program.</li></ul>
+    <ul><li>Analyzed and reduced noisy datasets from Yahoo Finance through 50-days simple moving averages.</li></ul>
+  </div>
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<h4><b>Professional/Project Experience</b></h4>
-								<ul class="features">
-									<table style="table-layout: fixed ; width: 100%;">
-										<td id="workE" onclick="location.href = 'marine_robotics.html'">
-											<h5 style="text-align: center;"><b>Marine Robotics - RoboBoat</b></h5>
-											<h6 style="text-align: center;">Software Team Member</h6>
-											<img src="images/marine_robotics.png" style="width: 40%;">
-										</td>
-										<td id="workE" onclick="location.href = 'vex.html'">
-											<h5 style="text-align: center;"><b>VEX V5 Robotics - Nationals</b></h5>
-											<h6 style="text-align: center;">Team Leader & Software Lead</h6>
-											<img src="images/vex_robotics.png" style="width: 45%;">
-										</td>
-									
-										<td id="workE" onclick="location.href = 'fish_assistant.html'">
-											<h5 style="text-align: center;"><b>Internet of Things Fish Assistant Project </b></h5>
-											<h6 style="text-align: center;">Project Manager</h6>
-											<img src="images/fish_assistant.png" style="width: 45%;">
-										</td>
-									</table>
-									<table style="table-layout: fixed ; width: 100%;">
-										<td id="workE" onclick="location.href = 'smart_walker.html'">
-											<h5 style="text-align: center;"><b>Smart Walker</b></h5>
-											<h6 style="text-align: center;">Project Manager</h6>
-											<img src="images/smart_walker.jpg" style="width: 40%;">
-										</td>
-										<td id="workE" onclick="location.href = 're_source.html'">
-											<h5 style="text-align: center;"><b>Re: Source Online Learning Platform</b></h5>
-											<h6 style="text-align: center;">Project Manager</h6>
-											<img src="images/re-source.png" style="width: 70%;">
-										</td>
-									
-										<td id="workE" onclick="location.href = 'viqc.html'">
-											<h5 style="text-align: center;"><b>VIQC - Nationals </b></h5>
-											<h6 style="text-align: center;">Master of Ceremony</h6>
-											<img src="images/viqc.webp" style="width: 45%;">
-										</td>
-									</table>
-								</ul>
-								<h2><a href="https://drive.google.com/file/d/18_WNzb30LHa867SjbaYCP1SyyCBn4AvJ/view?usp=sharing">Career Goals</a></h2>
-							</section>
+  <!-- Add three new job title blocks under Project Experiences -->
+  <div class="experience" onclick="openPopup('experience5-popup')">
+    <h2>VEX V5 Robotics Nationals</h2>
+    <p><b>Team Leader, </b>Bangkok, Thailand</p>
+    <p>September 2020 – March 2022</p>
+    <ul><li>Earned the prestigious VEX 2022 Excellence Award and led team to the VEX Robotics World Championship 2022 at Dallas, Texas.</li></ul>
+    <ul><li>Constructed mechanical robot and PID control algorithm with the highest Offensive Power Rating of 51.6 in competition.</li></ul>
+    <ul><li>Authored 8000+ word VEX GWD Handbook: https://tinyurl.com/v8y8exzy.</li></ul>
+  </div>
 
+  <div class="experience" onclick="openPopup('experience6-popup')">
+    <h2>Internet of Things Fish Assistant Project </h2>
+    <p><b>Project Manager, </b>Bangkok, Thaland</p>
+    <p>November 2019 – February 2021</p>
+    <ul><li>Designed website using HTML and CSS to control aquarium functions like automatic feeding, and water pH balance.</li></ul>
+    <ul><li>Coordinated the use of ESP8226, MQTT, and Firebase to create IoT architecture for publishing and posting water temperature data.</li></ul>
+    <ul><li>Modelled automatic fish feeder servo-activated spiral dispenser using Fusion 360.</li></ul>
+  </div>
 
-				<!-- Footer -->
-					<section id="contact_me">
-					<footer id="footer">
-						
-						<section>
-							<h2>Contact Me</h2>
-							<dl class="alt">
-								<dt>Phone</dt>
-								<dd>(803) 524 0819</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:gate.tang@gmail.com">gate.tang@gmail.com</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/gate-tangchartsiri/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/gateTang" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="mailto:gate.tang@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">Gate Tangchartsiri  &copy; 2022</p>
-					</footer>
-					</section>
+  <div class="experience" onclick="openPopup('experience7-popup')">
+    <h2>SmartWalker Walking Aid Project</h2>
+    <p><b>Project Manager, </b>Bangkok, Thaland</p>
+    <p>December 2018 – February 2020</p>
+    <ul><li>Engineered fall detection system into walking aid for the elderly through vibration sensors and bluetooth-connected application.</li></ul>
+    <ul><li>Implemented cushioning mechanism that softens impact by using compound spring systems and increased contact surface area.</li></ul>
+    <ul><li>Earned the High School Systems and Control Academic Award in 2018-2019 and 2019-2020..</li></ul>
+  </div>
+  
+  <h2>Certificates</h2>
+  
+  <div class="experience" onclick="openPopup('experience8-popup')">
+    <h2>Certified ScrumMaster® (CSM®) - Scrum Alliance</h2>
+    <p>August 2023 - August 2025</p>
+  </div>
+  
 
-			</div>
+<!-- Pop-up sections -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- Pop-up content for Job Title 1 -->
+<div id="experience1-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="popup-close" onclick="closePopup('experience1-popup')">&times;</span>
+    <img src="filler-image.jpg" alt="Carrier">
+    <h2>Digital Product Management Intern</h2>
+    <p>Carrier Corporation</p>
+    <p>May 2023 – August 2023</p>
+    <p>TBA</p>
+  </div>
+</div>
 
-	</body>
+<!-- Pop-up content for Job Title 2 -->
+<div id="experience2-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="popup-close" onclick="closePopup('experience2-popup')">&times;</span>
+    <img src="images/vip/invention_studio.png" alt="vip" width="10%" height="auto">
+    <h2>Research Project Lead</h2>
+    <p>Flowers Invention Studio/Smart3 Makerspaces</p>
+    <p>January 2023 – Present</p>
+    <p>Makerspace IoT (MSIoT) is a project advised by Dr. Amit Jariwala and the Smart3 Makerspaces Vertically Integrated Project Team. The project involves turning the largest makerspace in the United States, the Flowers Invention Studio into a much safer and optimized workshop through sensor monitoring and the compilation and analysis of data through Internet of Things. Through using the Backend as a Service (BaaS) service in Amazon Web Services and AWS IoT Core, the project aims to create an API which the data can be used for research and improvement of the makerspace.
+
+      Other tools which I have spearheaded is the programming of firmware for ESP32 to allow for its connection to AWS IoT Core and AWS MQTT services.</p>
+      <img src="images/vip/MicrosoftTeams-image.png" alt="Job Title 9 Image" width="30%", height="auto" class="img-no-save">
+      <img src="images/vip/vip1.png" alt="Job Title 9 Image" width="30%", height="auto" class="img-no-save">
+    </div>
+</div>
+
+<!-- Pop-up content for Job Title 3 -->
+<div id="experience3-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="popup-close" onclick="closePopup('experience3-popup')">&times;</span>
+    <img src="filler-image.jpg" alt="mrg">
+    <h2>Software Team Member</h2>
+    <p>Marine Robotics Club – RoboBoat</p>
+    <p>October 2022 – January 2023</p>
+    <p>TBA</p>
+  </div>
+</div>
+
+<!-- Pop-up content for Job Title 4 -->
+<div id="experience4-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup('experience4-popup')">&times;</span>
+      <img src="images/fintech/fintech1.webp" alt="fintech1" width="20%", height="auto">
+      <h2>Quantitative Analyst</h2>
+      <p>Private Financial Technology Marketplace and Investment Strategy Startup</p>
+      <p>May 2022 – December 2022</p>
+      <p>After learning about the technicality in investments, specifically in topics like portfolio daily returns and standard deviation, I have been interested in creating investment strategies that can help less-experienced-investors find the correct indicators and assets to invest in. This will mainly be done so through data and quantitative analysis tools like:
+        <br><br>Modern Portfolio Theory (Minimum Variance Efficient Frontier, portfolio daily returns and standard deviations).
+        <br>Denoising Tools (Simple Moving Averages)
+        <br>Equity Curves
+        <br>Drawdown Charts
+        <img src="images/fintech/fintech2.jpg" alt="fintech2">
+
+        <br>These tools are used to find the best combination of assets in portfolio. This may range from ETFs, bonds, and stocks in a portfolio. Currently, I am working on finding the best 3-asset combination.
+        </p>
+    </div>
+</div>
+
+<!-- Pop-up content for Job Title 5 -->
+<div id="experience5-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup('experience5-popup')">&times;</span>
+      <img src="images/vex/vex_logo.png" alt="vex_logo" width="15%" height="auto">
+      <h2>Team Leader</h2>
+      <p>VEX V5 Robotics Nationals</p>
+      <p>September 2020 – March 2022</p>
+      <p>TBA</p>
+      <img src="images/vex/vex.jpg" alt="vex_logo" width="50%" height="auto">
+    </div>
+  </div>
+
+  <!-- Pop-up content for Job Title 6 -->
+<div id="experience6-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup('experience6-popup')">&times;</span>
+      <img src="images/fish_assistant/fa1.jpg" alt="fa">
+      <h2>Project Manager</h2>
+      <p>Internet of Things Fish Assistant Project</p>
+      <p>November 2019 – February 2021</p>
+      <a href="https://github.com/gateTang/Fish-Assistant-Project">GitHub</a>
+      <p><br>As the project manager and the founder of the 'Fish Assistant' Internet of Things project, I worked as the overseer of the project where I took charge of designing electronics, software coding, etc.
+
+        <br><br>As an electronics and software manager, I focused on the IoT aspect of the project where I linked the two concepts together. In total, the product has function such as a temperature check and graph, toggle feed, and toggle change water. The electronics were built around an ESP8266 v2 module connected to components such as the DS18B20 and solenoids. The software was based on a Flask webframe that is connected to a Firebase cloud database and committed to a Heroku server. All of these aspects are linked together using MQTT to communicate within each other.
+        
+        <br><br>From this project I learnt a significant amounts of technically skills, especially in the software area and the outcome of the project looks great. I look forward to more similar IoT project to this in the future.</p>
+        <embed src="https://a360.co/3jJzfOl" style="width:1100px; height: 500px;">
+      </div>
+  </div>
+
+<!-- Pop-up content for Job Title 7 -->
+<div id="experience7-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup('experience7-popup')">&times;</span>
+      <img src="images/smart_walker/smart_walker1.jpg" alt="smart_walker_logo" width="15%" height="auto">
+      <h2>Project Manager,</h2>
+      <p>SmartWalker Walking Aid Project</p>
+      <p>December 2018 – February 2020</p>
+      <p>What I had in mind in this project was to tackle the current issue of lack of elderly support. Therefore, I decided to prototype a walking aid that can be used when the elderly are alone. As the project manager for the prototyping of the SmartWalker, I designed the whole design of the SmartWalker, including all the mechanics, electronics, and software needed. The functions of the Smart Walker include:
+        <br><br>• Walking Aid Stability and Cushion Mechanism.
+        <br><br>• Customizable Height
+        <br><br>• Compact size
+        <br><br>• Fall Alert System
+        <br><br>• Fall Alert Mobile Application
+        <br><br>Throughout the process of building the SmartWalker, I learnt many technical skills, particularly in electronics and software. In electronics, I worked with components, such as the Bluetooth HC-05 module and the Arduino MICRO which I thoroughly enjoyed learning and study about. In terms of software, I learnt mostly the beginnings of mobile app creation where I started off with the MIT App Inventor which I connected with a Bluetooth system. The app can be viewed by clicking this link. Overall, this issue still has yet to be solved. So I will continue to support the improvement of this issue through my ever-growing knowledge. In the future, I hope I can utilise my interest in robotics to further help with this 'elderly crisis'. I look forward to more projects like this in the future. Below is the video of the event:
+        <br><img src="images/smart_walker/smart_walker2.jpg" alt="smart_walker" width="50%" height="auto">
+      </p>
+    </div>
+  </div>
+
+  <!-- Pop-up content for Job Title 8 -->
+<div id="experience8-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup('experience8-popup')">&times;</span>
+      <img src="images/csm/seal-csm.png" alt="csm_seal" width="10%", height="auto" class="img-no-save">
+      <h2>Certified ScrumMaster® (CSM®)</h2>
+      <p>Scrum Alliance</p>
+      <p>August 2023 - August 2025</p>
+    </div>
+  </div>
+
+<!-- Repeat the above pattern for Job Title 4 to Job Title 9 -->
+
+<script>
+function openPopup(id) {
+  var popup = document.getElementById(id);
+  popup.style.display = "flex";
+  document.body.classList.add("no-scroll"); // Disable scrolling on main page
+}
+
+function closePopup(id) {
+  var popup = document.getElementById(id);
+  popup.style.display = "none";
+  document.body.classList.remove("no-scroll"); // Enable scrolling on main page
+}
+</script>
+
+</body>
 </html>
