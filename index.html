@@ -56,6 +56,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    transition: opacity 0.3s ease;
   }
   .popup-content {
     background-color: white;
@@ -85,6 +86,18 @@
   .img-no-save {
     pointer-events: none;
   }
+
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 600px) {
+      .popup-content {
+        max-width: 90%; /* Adjusted width for smaller screens */
+      }
+      resume {
+        width: 90%; /* Adjust width for smaller screens */
+      }
+
+  }
+
 </style>
 <link rel="icon" type="image/png" href="images/favicon/gt_favicon.png">
 <title>Gate Tangchartsiri - Online Resume</title>
@@ -94,7 +107,7 @@
 <div class="resume">
   <div class="contact">
     <h2>Gate Tangchartsiri</h2>
-    <p>+1 (803) 524-0819 | <a href="mailto:gate.tang@gmail.com">gate.tang@gmail.com</a> | <a href="https://www.linkedin.com/in/gate-tangchartsiri/">LinkedIn </a> | <a href="https://github.com/gateTang">GitHub</a> | Atlanta, Georgia</p>
+    <p>+1 (803) 524-0819 | <a href="mailto:gate.tang@gmail.com">gate.tang@gmail.com</a> | <a href="https://www.linkedin.com/in/gate-tangchartsiri/">LinkedIn</a> | <a href="https://github.com/gateTang">GitHub</a> | Atlanta, Georgia</p>
   </div>
 
   <h2>Education</h2>
@@ -328,12 +341,19 @@ function openPopup(id) {
   var popup = document.getElementById(id);
   popup.style.display = "flex";
   document.body.classList.add("no-scroll"); // Disable scrolling on main page
+  // Trigger fade-in by setting opacity after a short delay
+  setTimeout(function() {
+    popup.style.opacity = "1";
+  }, 50);
 }
 
 function closePopup(id) {
   var popup = document.getElementById(id);
-  popup.style.display = "none";
-  document.body.classList.remove("no-scroll"); // Enable scrolling on main page
+  popup.style.opacity = "0"; // Fade out by setting opacity
+  setTimeout(function() {
+    popup.style.display = "none";
+    document.body.classList.remove("no-scroll"); // Enable scrolling on main page
+  }, 300); // Wait for the fade-out transition duration
 }
 </script>
 
