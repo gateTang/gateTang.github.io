@@ -75,9 +75,9 @@
   }
   .popup-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+    top: 1%;
+    right: 1%;
+    font-size: 3em;
     cursor: pointer;
   }
   .no-scroll {
@@ -351,24 +351,26 @@
 <!-- Repeat the above pattern for Job Title 4 to Job Title 9 -->
 
 <script>
-function openPopup(id) {
-  var popup = document.getElementById(id);
-  popup.style.display = "flex";
-  document.body.classList.add("no-scroll"); // Disable scrolling on main page
-  // Trigger fade-in by setting opacity after a short delay
-  setTimeout(function() {
-    popup.style.opacity = "1";
-  }, 50);
-}
+  function openPopup(id) {
+    var popup = document.getElementById(id);
+    popup.style.display = "flex";
+    document.body.classList.add("no-scroll"); // Disable scrolling on main page
+    // Trigger fade-in by setting opacity after a short delay
+    setTimeout(function() {
+      popup.style.opacity = "1";
+    }, 50);
+  }
 
-function closePopup(id) {
-  var popup = document.getElementById(id);
-  popup.style.opacity = "0"; // Fade out by setting opacity
-  setTimeout(function() {
-    popup.style.display = "none";
-    document.body.classList.remove("no-scroll"); // Enable scrolling on main page
-  }, 300); // Wait for the fade-out transition duration
-}
+  function closePopup(id) {
+    var popup = document.getElementById(id);
+    popup.style.opacity = "0"; // Fade out by setting opacity
+    setTimeout(function() {
+      popup.style.display = "none";
+      document.body.classList.remove("no-scroll"); // Enable scrolling on main page
+    }, 300); // Wait for the fade-out transition duration
+  }
+
+  
 </script>
 
 </body>
