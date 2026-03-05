@@ -31,5 +31,5 @@ main:
   - title: "Resume"
     url: /files/gate-resume.pdf
 
-  # - title: "Projects"
-  #   url: /projects/
+  - title: "Projects"
+    url: /projects/

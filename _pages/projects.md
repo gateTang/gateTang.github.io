@@ -7,5 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-Project 1
-======
+## [Out of Order Processor](/projects/out-of-order-processor-project)
+
+## [Bike Buddy: Automated Bike](/projects/out-of-order-processor-project)
