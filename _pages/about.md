@@ -11,9 +11,9 @@ Hi, I'm Gate and I'm currently a fourth year Computer Engineering major undergra
 
 # Interests
 - Computer Architecture
-- Digital Design
 - Microarchitecture
 - Physical Design
+- Digital Design
 - HPC
 - Disaggregated Computing
 - Hardware/Software Codesign
