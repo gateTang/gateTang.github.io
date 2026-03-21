@@ -1,7 +1,7 @@
 ---
 title: 'PipeOpt - Automated Pipeline Register Insertion via ILP-Based Static Timing Analysis Optimization'
 date: 2026-01-01
-permalink: /pipe_opt
+permalink: /p/pipe_opt
 tags:
   - Physical Design
   - ILP

@@ -1,7 +1,7 @@
 ---
 title: 'Bike Buddy - Affordable Embedded Bike Connectivity with Predictive Maintenance'
 date: 2025-12-01
-permalink: /bike_buddy
+permalink: /p/bike_buddy
 tags:
   - Embedded Systems
 ---
